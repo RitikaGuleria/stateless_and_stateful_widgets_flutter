@@ -89,6 +89,8 @@ class _MyHomePageState extends State<MyHomePage> {
 }
 
 class MaterialButtonWidget extends StatelessWidget {
+  //bcz of this const constructor this method will built once above in tateful widget
+  // and resued multiple times.
   const MaterialButtonWidget({required this.onTap,required this.text});
   final VoidCallback onTap;
   final String text;
